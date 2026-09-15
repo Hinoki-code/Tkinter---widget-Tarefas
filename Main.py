@@ -51,7 +51,7 @@ class TaskWidget(ctk.CTk):
             font=("Arial Bold", 16),
             text_color=("#333333", "#E1E1E6")
         )
-        # O pulo do gato está aqui: um padding superior levemente ajustado para compensar a métrica da fonte de 22pt
+        
         self.lbl_titulo.pack(side="left", pady=(4, 0), anchor="center")
 
         self.btn_fechar = ctk.CTkButton(
@@ -326,7 +326,6 @@ class TaskWidget(ctk.CTk):
         Sessao.close()
 
     def deletar_tarefa_frontend(self, id_tarefa):
-        # Espaço reservado para você chamar o método de exclusão do backend quando criar
         Sessao = db.TempSessao()
 
         DeletarTarefa = Sessao.query(db.Tarefa).filter_by(Id=id_tarefa).first()
