@@ -31,4 +31,3 @@ class Tarefa(Base):
 Base.metadata.create_all(Engine)
 
 
-#Tarefa.CriarTarefa("Ir na casa da mhayhara" , "Esse domingo visitar a mhayhara e terminar o filme Corra." ,"13-09-2026", False)
