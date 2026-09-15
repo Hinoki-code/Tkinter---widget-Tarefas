@@ -20,7 +20,7 @@ class Tarefa(Base):
     def CriarTarefa(Cs,TITULO, DESCRICAO,DATA,COMPLETO):
         Sessao = TempSessao()
         
-        DATA=datetime.datetime.strptime(DATA,"%d-%m-%Y").date()
+        DATA=datetime.datetime.strptime(DATA,"%d/%m/%Y").date()
         
         
         Informacoes = Cs(Titulo=TITULO , Descricao=DESCRICAO , Data=DATA , Completo=COMPLETO)
